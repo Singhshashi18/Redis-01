@@ -24,4 +24,10 @@ console.log('Another random change for commit and push');
 // Added a log to demonstrate a meaningful update for commit
 console.log('Meaningful update: Added demonstration log for commit message');
 
+// Update: Added a function to show current date for demonstration
+function showCurrentDate() {
+  console.log('Current date:', new Date().toLocaleString());
+}
+showCurrentDate();
+
 module.exports = { getAIResponse };
