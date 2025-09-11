@@ -48,4 +48,10 @@ function printBranchName() {
 }
 printBranchName();
 
+// Update: Added a function to print the current year
+function printCurrentYear() {
+  console.log('Current year:', new Date().getFullYear());
+}
+printCurrentYear();
+
 module.exports = { getAIResponse };
