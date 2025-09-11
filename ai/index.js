@@ -102,4 +102,14 @@ function printCommentCount() {
 }
 printCommentCount();
 
+// Update: Added a function to print the number of require/import statements in this file
+function printImportCount() {
+  const fs = require('fs');
+  const content = fs.readFileSync(__filename, 'utf8');
+  const requireMatches = content.match(/require\s*\(/g) || [];
+  const importMatches = content.match(/import\s+/g) || [];
+  console.log('Number of require/import statements in ai/index.js:', requireMatches.length + importMatches.length);
+}
+printImportCount();
+
 module.exports = { getAIResponse };
