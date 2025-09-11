@@ -75,4 +75,13 @@ function printFileLength() {
 }
 printFileLength();
 
+// Update: Added a function to print the number of functions in this file
+function countFunctions() {
+  const fs = require('fs');
+  const content = fs.readFileSync(__filename, 'utf8');
+  const matches = content.match(/function\s+\w+/g);
+  console.log('Number of functions in ai/index.js:', matches ? matches.length : 0);
+}
+countFunctions();
+
 module.exports = { getAIResponse };
