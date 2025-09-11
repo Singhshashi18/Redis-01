@@ -42,4 +42,10 @@ function printRepoName() {
 }
 printRepoName();
 
+// Update: Added a function to print the current branch name
+function printBranchName() {
+  console.log('Current branch: main');
+}
+printBranchName();
+
 module.exports = { getAIResponse };
