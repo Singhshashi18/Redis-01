@@ -30,4 +30,10 @@ function showCurrentDate() {
 }
 showCurrentDate();
 
+// Update: Added a function to print a motivational message
+function printMotivation() {
+  console.log('Keep learning, keep growing! 🚀');
+}
+printMotivation();
+
 module.exports = { getAIResponse };
