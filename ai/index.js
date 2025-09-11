@@ -36,4 +36,10 @@ function printMotivation() {
 }
 printMotivation();
 
+// Update: Added a function to print the repository name
+function printRepoName() {
+  console.log('Repository: Redis-01');
+}
+printRepoName();
+
 module.exports = { getAIResponse };
