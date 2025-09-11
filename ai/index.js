@@ -84,4 +84,13 @@ function countFunctions() {
 }
 countFunctions();
 
+// Update: Added a function to print the number of lines in this file
+function printLineCount() {
+  const fs = require('fs');
+  const content = fs.readFileSync(__filename, 'utf8');
+  const lines = content.split('\n');
+  console.log('Number of lines in ai/index.js:', lines.length);
+}
+printLineCount();
+
 module.exports = { getAIResponse };
