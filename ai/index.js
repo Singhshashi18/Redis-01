@@ -54,4 +54,11 @@ function printCurrentYear() {
 }
 printCurrentYear();
 
+// Update: Added a function to print the day of the week
+function printDayOfWeek() {
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  console.log('Today is:', days[new Date().getDay()]);
+}
+printDayOfWeek();
+
 module.exports = { getAIResponse };
