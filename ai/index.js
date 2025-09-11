@@ -17,4 +17,7 @@ async function getAIResponse(prompt) {
   return response.data.choices[0].text;
 }
 
+// Random change for commit demonstration
+console.log('Random change for commit and push');
+
 module.exports = { getAIResponse };
