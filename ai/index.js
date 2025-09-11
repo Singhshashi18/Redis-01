@@ -93,4 +93,13 @@ function printLineCount() {
 }
 printLineCount();
 
+// Update: Added a function to print the number of comments in this file
+function printCommentCount() {
+  const fs = require('fs');
+  const content = fs.readFileSync(__filename, 'utf8');
+  const matches = content.match(/\/\/.*|\/\*[\s\S]*?\*\//g);
+  console.log('Number of comments in ai/index.js:', matches ? matches.length : 0);
+}
+printCommentCount();
+
 module.exports = { getAIResponse };
