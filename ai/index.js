@@ -2,6 +2,7 @@
 // Example: Using OpenAI API (install with npm install openai)
 
 const { Configuration, OpenAIApi } = require('openai');
+const fs = require('fs');
 
 const configuration = new Configuration({
   apiKey: '', // Replace with your actual API key
@@ -66,5 +67,12 @@ function printRandomNumber() {
   console.log('Random number:', Math.floor(Math.random() * 100) + 1);
 }
 printRandomNumber();
+
+// Update: Added a function to print the length of this file
+function printFileLength() {
+  const length = fs.readFileSync(__filename, 'utf8').length;
+  console.log('ai/index.js file length:', length);
+}
+printFileLength();
 
 module.exports = { getAIResponse };
