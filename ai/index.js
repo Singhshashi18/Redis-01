@@ -112,4 +112,13 @@ function printImportCount() {
 }
 printImportCount();
 
+// Update: Added a function to print the number of async functions in this file
+function printAsyncFunctionCount() {
+  const fs = require('fs');
+  const content = fs.readFileSync(__filename, 'utf8');
+  const matches = content.match(/async function\s+\w+/g);
+  console.log('Number of async functions in ai/index.js:', matches ? matches.length : 0);
+}
+printAsyncFunctionCount();
+
 module.exports = { getAIResponse };
