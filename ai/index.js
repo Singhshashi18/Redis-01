@@ -1,6 +1,6 @@
  // Placeholder for AI logic
 // Example: Using OpenAI API (install with npm install openai)
-
+ 
 const { Configuration, OpenAIApi } = require('openai');
 const fs = require('fs');
 
