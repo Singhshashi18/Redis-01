@@ -1,4 +1,4 @@
-b                                 // Placeholder for Node.js/Express Redis backend setup
+ b                                 // Placeholder for Node.js/Express Redis backend setup
 // Install dependencies: npm install express redis
 
 const express = require('express');
