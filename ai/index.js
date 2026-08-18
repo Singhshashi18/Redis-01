@@ -6,7 +6,7 @@ const fs = require('fs');
 
 const configuration = new Configuration({
   apiKey: '', // Replace with your actual API key
-});
+}); 
 const openai = new OpenAIApi(configuration);
 
 async function getAIResponse(prompt) {
